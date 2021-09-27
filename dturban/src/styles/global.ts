@@ -1,18 +1,18 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-
 :root {
-    --background:#2C2C2C;
+    --background: #282828;
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: var(--background);
-    -webkit-font-smoothing:antialiased;
+    -webkit-font-smoothing: antialiased;
 }
 `;
