@@ -1,7 +1,11 @@
+
 export function Header() {
     return (
         <header>
-            Header
+            <img src="" alt="dt urban" />
+            <button type="button">
+                Nova transação
+            </button>
         </header>
     )
 }
