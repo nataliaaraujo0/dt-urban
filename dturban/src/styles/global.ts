@@ -3,6 +3,14 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 :root {
     --background: #282828;
+    --shape:#C4C4C4;
+    
+    --text-body:#969CB2;
+    --text-title:#FFFFFF;
+
+    --red:#E52E4D;
+    --dark-700:#2C2C2C;
+    --dark-500:#3F3A3A;
 }
 
 *{
@@ -25,6 +33,16 @@ html{
 body {
     background: var(--background);
     -webkit-font-smoothing: antialiased;
+}
+
+body, input,textarea,button{
+  font-family:'Raleway', sans-serif;  
+  font-weight: 400;
+
+}
+
+h1, h2, h3, h4, h5,h6,strong{
+    font-weight: 600;
 }
 
 button{
