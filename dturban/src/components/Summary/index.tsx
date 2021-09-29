@@ -1,5 +1,15 @@
+import EntradasImg from '../../assets/entradas.svg'
+import { Container } from "./style";
+
 export function Summary() {
     return (
-        <h1>Summary</h1>
+        <Container>
+            <div>
+                <header>
+                    <p>Entradas</p>
+                    <img src={EntradasImg} alt="Entradas" />
+                </header>
+            </div>
+        </Container>
     );
 }
