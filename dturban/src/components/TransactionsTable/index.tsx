@@ -15,30 +15,24 @@ export function TransactionsTable() {
 
                 <tbody>
                     <tr>
-                        <td>Touca Preta</td>
-                        <td>R$80,00</td>
-                        <td>Touca</td>
-                        <td>22/09/2021</td>
-                    </tr>
-                    <tr>
-                        <td>Camisa Oversize Mescla</td>
-                        <td>R$150,00</td>
-                        <td>T-shirt</td>
-                        <td>24/09/2021</td>
+                        <td>Ceo</td>
+                        <td className="deposit">R$1.500,00</td>
+                        <td>Investimento</td>
+                        <td>01/10/2021</td>
                     </tr>
 
                     <tr>
-                        <td>Camisa Tricoline Listrada</td>
-                        <td>R$175,00</td>
-                        <td>T-shirt</td>
-                        <td>24/09/2021</td>
+                        <td>Sócio</td>
+                        <td className="deposit">R$800,00</td>
+                        <td>investimento</td>
+                        <td>15/10/2021</td>
                     </tr>
 
                     <tr>
-                        <td>Calça Oversize</td>
-                        <td>R$179,00</td>
-                        <td>Calça</td>
-                        <td>29/09/2021</td>
+                        <td>Etiquetas</td>
+                        <td className="withdraw">-R$80,00</td>
+                        <td>Fornecedor</td>
+                        <td>15/09/2021</td>
                     </tr>
 
                 </tbody>
