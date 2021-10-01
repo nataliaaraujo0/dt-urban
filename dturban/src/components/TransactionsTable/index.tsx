@@ -5,10 +5,12 @@ export function TransactionsTable() {
         <Container>
             <table>
                 <thead>
-                    <th>Título</th>
-                    <th>Valor</th>
-                    <th>Categoria</th>
-                    <th>Data</th>
+                    <tr>
+                        <th>Título</th>
+                        <th>Valor</th>
+                        <th>Categoria</th>
+                        <th>Data</th>
+                    </tr>
                 </thead>
 
                 <tbody>
@@ -18,7 +20,6 @@ export function TransactionsTable() {
                         <td>Touca</td>
                         <td>22/09/2021</td>
                     </tr>
-
                     <tr>
                         <td>Camisa Oversize Mescla</td>
                         <td>R$150,00</td>
@@ -39,9 +40,7 @@ export function TransactionsTable() {
                         <td>Calça</td>
                         <td>29/09/2021</td>
                     </tr>
-
                 </tbody>
-
             </table>
         </Container>
     );
