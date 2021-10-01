@@ -40,6 +40,7 @@ export function TransactionsTable() {
                         <td>Calça</td>
                         <td>29/09/2021</td>
                     </tr>
+
                 </tbody>
             </table>
         </Container>
