@@ -1,4 +1,4 @@
-import { Container } from "./styles";
+import { Container } from "../TransactionsTable/styles";
 
 export function TransactionsTable() {
     return (
