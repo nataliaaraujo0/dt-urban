@@ -1,8 +1,7 @@
 import EntradasImg from '../../assets/entradas.svg';
 import SaidasImg from '../../assets/saidas.svg';
 import TotalImg from '../../assets/total.svg';
-
-import { Container } from "./style";
+import { Container } from "./styles";
 
 export function Summary() {
     return (
