@@ -19,7 +19,7 @@ export function App() {
 
   return (
     <>
-      <Header />
+      <Header onOpenNewTransactionModal={handleOpenNewTransactionModal} />
       <Dashoboard />
 
       <Modal isOpen={isNewTransactionModalOpen}
