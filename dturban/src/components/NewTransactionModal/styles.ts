@@ -25,7 +25,11 @@ export const Container = styled.form`
     }
   }
 
-  button[type="submit"] {
+`;
+
+export const RadioBox = styled.button`
+
+button[type="submit"] {
     width: 100%;
     padding: 0 1.5rem;
     height: 4rem;
@@ -72,5 +76,4 @@ export const TransactionTypeContainer = styled.div`
     margin-left: 1rem;
     font-size: 1rem;
     color: var(--text-title);
-  }
-`;
+  }`
