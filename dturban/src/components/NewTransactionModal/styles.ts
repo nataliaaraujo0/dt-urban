@@ -52,7 +52,8 @@ export const RadioBox = styled.button<RadioBoxProps>`
   height: 4rem;
   border: 1px solid #383443;
   border-radius: 0.25rem;
-  background: #282828;
+
+  background: ${props => (props.isActive ? "#205E3C" : "#282828")};
 
   display: flex;
   justify-content: center;
