@@ -2,12 +2,21 @@ import { useEffect, useState } from "react";
 import { api } from "../../services/api";
 import { Container } from "../TransactionsTable/styles";
 
+interface Transactions {
+    id: number;
+    title: string;
+    amount: number;
+    type: string;
+    category: string;
+    createdAt: string;
+}
+
 export function TransactionsTable() {
-    const [transactions, setTransactions] = useState([]);
+    const [transactions, setTransactions] = useState<Transactions[]>([]);
 
     useEffect(() => {
         api.get('/transactions')
-            .then(response => setTransactions(response.data))
+            .then(response => setTransactions(response.data.transactions))
 
     }, [])
 
@@ -25,27 +34,16 @@ export function TransactionsTable() {
                 </thead>
 
                 <tbody>
-                    <tr>
-                        <td>Ceo</td>
-                        <td className="deposit">R$1.500,00</td>
-                        <td>Investimento</td>
-                        <td>01/10/2021</td>
-                    </tr>
-
-                    <tr>
-                        <td>Sócio</td>
-                        <td className="deposit">R$800,00</td>
-                        <td>investimento</td>
-                        <td>15/10/2021</td>
-                    </tr>
-
-                    <tr>
-                        <td>Etiquetas</td>
-                        <td className="withdraw">-R$80,00</td>
-                        <td>Fornecedor</td>
-                        <td>15/09/2021</td>
-                    </tr>
-
+                    {transactions.map(transaction => {
+                        return (
+                            <tr key={transaction.id} >
+                                <td>{transaction.title}</td>
+                                <td className={transaction.type}>{transaction.amount}</td>
+                                <td>{transaction.category}</td>
+                                <td>{transaction.createdAt}</td>
+                            </tr>
+                        )
+                    })}
                 </tbody>
             </table>
         </Container>
