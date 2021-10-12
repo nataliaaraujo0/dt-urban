@@ -7,29 +7,20 @@ export const Container = styled.form`
     font-size: 1.5rem;
     margin-bottom: 2rem;
   }
-
   input {
     width: 100%;
     padding: 0 1.5rem;
     height: 4rem;
     border-radius: 0.25rem;
-
     border: 1px solid #292828;
     background: #1e1e1e;
-
     font-weight: 400;
     font-size: 1rem;
-
     & + input {
       margin-top: 1rem;
     }
   }
-
-`;
-
-export const RadioBox = styled.button`
-
-button[type="submit"] {
+  button[type="submit"] {
     width: 100%;
     padding: 0 1.5rem;
     height: 4rem;
@@ -39,9 +30,7 @@ button[type="submit"] {
     border: 0;
     font-size: 1rem;
     margin-top: 1.5rem;
-
     transition: filter 0.2s;
-
     &:hover {
       filter: brightness(0.9);
     }
@@ -53,22 +42,26 @@ export const TransactionTypeContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
+`;
 
-  button {
-    height: 4rem;
-    border: 1px solid #383443;
-    border-radius: 0.25rem;
-    background: #282828;
+interface RadioBoxProps {
+  isActive: boolean;
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+export const RadioBox = styled.button<RadioBoxProps>`
+  height: 4rem;
+  border: 1px solid #383443;
+  border-radius: 0.25rem;
+  background: #282828;
 
-    transition: border-color 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    &:hover {
-      border-color: ${darken(0.1, "#383443")};
-    }
+  transition: border-color 0.4s;
+
+  &:hover {
+    border-color: ${darken(0.1, "#383443")};
   }
 
   span {
@@ -76,4 +69,5 @@ export const TransactionTypeContainer = styled.div`
     margin-left: 1rem;
     font-size: 1rem;
     color: var(--text-title);
-  }`
+  }
+`;

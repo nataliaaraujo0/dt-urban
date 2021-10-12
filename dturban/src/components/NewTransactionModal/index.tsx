@@ -3,6 +3,7 @@ import { Container, RadioBox, TransactionTypeContainer } from './styles';
 import closeImg from '../../assets/close.svg';
 import EntradaImg from '../../assets/entradas.svg';
 import SaidaImg from '../../assets/saidas.svg';
+import { useState } from 'react';
 interface NewTransactionModalProps {
     isOpen: boolean;
     onRequestClose: () => void;
@@ -11,6 +12,7 @@ interface NewTransactionModalProps {
 
 export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionModalProps) {
 
+    const [type, setType] = useState('deposit');
 
 
     return (
@@ -39,7 +41,9 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
 
                 <TransactionTypeContainer>
                     <RadioBox
-                    type="button"
+                        type="button"
+                        onClick={() => { setType('deposit'); }}
+                        isActive={type === 'deposit'}
                     >
                         <img src={EntradaImg} alt="entrada"
                         />
@@ -47,7 +51,9 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
                     </RadioBox>
 
                     <RadioBox
-                    type="button"
+                        type="button"
+                        onClick={() => { setType('widthdraw') }}
+                        isActive={type === 'widthdraw'}
                     >
                         <img src={SaidaImg} alt="saida"
                         />
