@@ -5,7 +5,6 @@ export const GlobalStyle = createGlobalStyle`
     --background:#282828;
     --shape:#1E1E1E;
 
-    
     --text-body:#9FA0A1;
     --text-title:#FFFFFF;
 
@@ -77,4 +76,19 @@ button{
     position: relative;
     border-radius:0.24rem;
 }
+
+.react-modal-close{
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    border: 0;
+    background: transparent;
+
+        transition: filter 0.2s;
+
+        &:hover{
+        filter: brightness(2);
+}
+}
+
 `;
