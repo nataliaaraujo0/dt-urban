@@ -1,23 +1,10 @@
-import { useEffect, useState } from "react";
+
+import React,{ useEffect, useState, useContext } from "react";
 import { api } from "../../services/api";
+import { TransactionsContext } from "../../TransactionsContext";
 import { Container } from "../TransactionsTable/styles";
-interface Transactions {
-    id: number;
-    title: string;
-    amount: number;
-    type: string;
-    category: string;
-    createdAt: string;
-}
-
 export function TransactionsTable() {
-    const [transactions, setTransactions] = useState<Transactions[]>([]);
-
-    useEffect(() => {
-        api.get('/transactions')
-            .then(response => setTransactions(response.data.transactions))
-
-    }, [])
+   const data = useContext(TransactionsContext);
 
     return (
         <Container>

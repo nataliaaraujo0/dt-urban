@@ -11,7 +11,7 @@ Modal.setAppElement('#root');
 
 export function App() {
   const [isNewTransactionModalOpen, setIsNewTransactionModalOpen] = useState(false);
-
+  
   function handleOpenNewTransactionModal() {
     setIsNewTransactionModalOpen(true);
   }
@@ -21,7 +21,7 @@ export function App() {
   }
 
   return (
-    <TransactionsContext.Provider value={[]}>
+    <TransactionsContext.Provider value={transactions}>
       <Header onOpenNewTransactionModal={handleOpenNewTransactionModal} />
       <Dashoboard />
       <NewTransactionModal
