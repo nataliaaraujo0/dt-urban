@@ -14,7 +14,7 @@ interface TransactionsProviderProps {
     children: ReactNode;
 }
 
-type TransactionInput = Omit<Transaction, 'id' | 'createdAt'>
+type TransactionInput = Pick<Transaction, 'title' | 'amount' | 'type' | 'category'>
 
 export const TransactionsContext = createContext<Transaction[]>([]);
 
