@@ -1,6 +1,5 @@
 import { createContext, ReactNode, useEffect, useState } from "react";
 import { api } from "./services/api";
-
 interface Transaction {
     id: number;
     title: string;
@@ -9,11 +8,9 @@ interface Transaction {
     category: string;
     createdAt: string;
 }
-
 interface TransactionsProviderProps {
     children: ReactNode;
 }
-
 interface TransactionsContextData {
     transactions: Transaction[];
     createTransaction: (transaction: TransactionInput) => Promise<void>;
