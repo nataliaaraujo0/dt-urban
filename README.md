@@ -7,6 +7,10 @@
 #### Ambiente de Desenvolvimento:
 Create React App + template Typescript
 
+#### Para startar Aplicação, use o comando:
+```
+yarn start
+```
 #### Técnologias usadas:
 React e ecossistema - Styled Components, MirageJS, Context API, hooks, Axios e muito mais.
 
