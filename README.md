@@ -1,6 +1,6 @@
 # dt-URBAN
 
- <img alt="banner" title="banner" src="src/assets/banner.png" />
+ <img alt="banner" title="banner" src="../../assets/banner.png" />
 <h4 align="center">Dashboard - Transações</h4>
 
 ### Esse projeto tem como objetivo criar um Dashboard de transações através de uma tabela que pode ser alimentada com novos cadastros. Será mostrado também um resumo dessas transações, dividias em "Entradas" "Saídas" e "Total" dos valores.
